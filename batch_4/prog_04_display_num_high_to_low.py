@@ -13,3 +13,9 @@ while True:
         break  # break loop if the input's invalid
 
 # sort and display numbers from highest to lowest
+if numbers:
+    numbers.sort(reverse=True)
+    print("Numbers from highest to lowest:", *numbers)
+else:
+    print("No numbers were entered.")
+
