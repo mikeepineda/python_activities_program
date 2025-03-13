@@ -13,5 +13,13 @@ while True:
         numbers.append(num)
     except ValueError:
         break # break when the input is invalid
+
 # find the most frequent nummber
+if numbers:
+    freq_count = Counter(numbers)
+    most_freq = max(freq_count, key=freq_count.get)
+
 # print display
+    print(f"The number with the most duplicates is: {most_freq} (appeared {freq_count[most_freq]} times)")
+else:
+    print("No numbers were entered.")
