@@ -7,9 +7,11 @@ from collections import Counter
 numbers = []
 
 # ask user's input
-num = int(input("Enter a number (or any non-number to stop): "))
-numbers.append(num)
-
-# break when the input is invalid
+while True: 
+    try:
+        num = int(input("Enter a number (or any non-number to stop): "))
+        numbers.append(num)
+    except ValueError:
+        break # break when the input is invalid
 # find the most frequent nummber
 # print display
