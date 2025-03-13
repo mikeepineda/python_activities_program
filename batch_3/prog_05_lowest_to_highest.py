@@ -7,9 +7,12 @@ numbers = []
 while True: 
     try: 
         num = int(input("Enter a number: "))
-        number.append(num) # store valid number
+        numbers.append(num) # store valid number
     except ValueError:
         break # break if the input is invalid
-    
-# display num from lowest to highest
 
+# display num from lowest to highest
+if numbers: 
+    print ("Numbers in ascending order:", numbers)
+else: 
+    print ("No valid numbers were entered.")
