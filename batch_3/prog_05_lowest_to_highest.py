@@ -13,6 +13,7 @@ while True:
 
 # display num from lowest to highest
 if numbers: 
+    numbers.sort() # sort the list in ascending order
     print ("Numbers in ascending order:", numbers)
 else: 
     print ("No valid numbers were entered.")
