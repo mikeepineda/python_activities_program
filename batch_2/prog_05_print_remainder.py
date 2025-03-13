@@ -3,6 +3,8 @@
 # ask user 2 inputs
 num1 = int(input("Input your first number: "))
 num2 = int(input("Input your second number: "))
+
+# calculate remainder
 result = num1 % num2
 
 # print remainder
