@@ -4,7 +4,13 @@
 lowest = None 
 
 # ask for user's input
-num = int(input("Enter a number: "))
+while True: 
+    try: 
+        num = int(input("Enter a number: "))
 
-# update lowest number
-# break if the input is invalid
+        # update lowest number
+        if lowest is None or num < lowest:
+            lowest = num
+            
+    except ValueError:
+        break # break if the input is invalid
