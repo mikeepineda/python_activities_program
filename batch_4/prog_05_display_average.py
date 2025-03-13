@@ -12,6 +12,9 @@ while True:
         break # break if the input is invalid
 
 # calculate
-average = sum(numbers) / len(numbers)
-
 # display the average
+if numbers:
+    average = sum(numbers) / len(numbers)
+    print(f"The average of the entered numbers is: {average:.2f}")
+else:
+    print("No numbers were entered.")
