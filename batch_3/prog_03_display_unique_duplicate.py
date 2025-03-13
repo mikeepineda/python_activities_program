@@ -2,12 +2,19 @@
 
 # create a list to store user's input
 numbers = []
+
 # ask for user's input
-num = int(input("Enter a number:"))
-# check if num is a duplicate
-if num in numbers:
-    print ("Duplicate")
-else:
-    print ("Unique")
-    numbers.append(num) # store only unique numbers
+while True:
+    try:
+        num = int(input("Enter a number:"))
+    # check if num is a duplicate
+        if num in numbers:
+            print ("Duplicate") 
+        else:
+            print ("Unique")
+            numbers.append(num) # store only unique numbers
+
 # exit loop if the input is invalid
+    except ValueError: 
+        print ("Input invalid. The program will stop.")
+        break
