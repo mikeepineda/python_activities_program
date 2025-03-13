@@ -12,5 +12,9 @@ while True:
             highest = num
     except ValueError:
         break # break if the input is invalid
-    
+
 # display the highest number
+if highest is not None:
+    print(f"The highest number entered is: {highest}")
+else:
+    print("No numbers were entered.")
