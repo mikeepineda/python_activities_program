@@ -9,5 +9,10 @@ for i in range (10):
         seen.add(num)   # mark as seen
     numbers.append(num) # store in list
 # display result
+print("Numbers with only first occurrence of duplicates:")
 # create an empty set called displayed to track prints
-# mark as printed
+displayed = set()  # Another set to track what we print
+for num in numbers:
+    if num not in displayed:
+        print(num)
+        displayed.add(num) # mark as printed
