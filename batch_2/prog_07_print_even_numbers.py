@@ -8,6 +8,5 @@ for i in range(10):
     if num % 2 == 0: # check if the number is even
         count += 1  
 
-
 # print the count of even numbers
 print("Even numbers count:", count)
