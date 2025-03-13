@@ -11,6 +11,7 @@ while True:
     except ValueError:
         break # break if the input is invalid
 
-
 # calculate
+average = sum(numbers) / len(numbers)
+
 # display the average
