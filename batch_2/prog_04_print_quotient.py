@@ -2,4 +2,4 @@
 
 # ask user two inputs
 
-# print quotient
+# print quotient of two inputs
