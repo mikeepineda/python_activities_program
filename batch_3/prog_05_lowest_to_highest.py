@@ -4,8 +4,12 @@
 numbers = []
 
 # ask for user's input
-num = int(input("Enter a number: "))
-# store valid number
-# break if the input is invalid
+while True: 
+    try: 
+        num = int(input("Enter a number: "))
+        number.append(num) # store valid number
+    except ValueError:
+        break # break if the input is invalid
+    
 # display num from lowest to highest
 
