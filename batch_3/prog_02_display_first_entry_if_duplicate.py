@@ -3,6 +3,8 @@
 # store user input
 # set to track seen numbers
 # ask user to input 10 numbers
+for i in range (10): 
+    num = int(input(f"Enter your number {i +1: }"))
 # check if number is already displayed
 # mark as seen
 # store in list
