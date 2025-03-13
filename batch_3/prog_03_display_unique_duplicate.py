@@ -6,7 +6,7 @@ numbers = []
 # ask for user's input
 while True:
     try:
-        num = int(input("Enter a number:"))
+        num = int(input("Enter a number: "))
     # check if num is a duplicate
         if num in numbers:
             print ("Duplicate") 
