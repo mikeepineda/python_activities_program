@@ -11,6 +11,12 @@ while True:
         # update lowest number
         if lowest is None or num < lowest:
             lowest = num
-            
+
     except ValueError:
         break # break if the input is invalid
+
+# display the lowest number if at least one valid input was given
+if lowest is not None:
+    print("Lowest number entered:", lowest)
+else:
+    print("No valid numbers were entered.")
