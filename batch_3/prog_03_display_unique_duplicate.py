@@ -5,5 +5,9 @@ numbers = []
 # ask for user's input
 num = int(input("Enter a number:"))
 # check if num is a duplicate
-# store only unique numbers
+if num in numbers:
+    print ("Duplicate")
+else:
+    print ("Unique")
+    numbers.append(num) # store only unique numbers
 # exit loop if the input is invalid
